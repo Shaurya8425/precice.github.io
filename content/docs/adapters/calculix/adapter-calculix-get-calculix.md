@@ -46,7 +46,7 @@ If `spooles` compilation breaks with `-Werror=format-security`, replace the flag
 Download SPOOLES, e.g:
 
 ```bash
-wget http://www.netlib.org/linalg/spooles/spooles.2.2.tgz 
+wget http://www.netlib.org/linalg/spooles/spooles.2.2.tgz
 ```
 
 Extract it in a separate directory
@@ -61,7 +61,7 @@ Edit by hand configuration file `Make.inc` to change the compiler version in lin
 
 ```make
 CC = gcc
-#CC = /usr/lang-4.0/bin/cc 
+#CC = /usr/lang-4.0/bin/cc
 ```
 
 With recent compilers, [more patches might be needed](https://github.com/precice/precice.github.io/issues/608).
@@ -69,7 +69,7 @@ With recent compilers, [more patches might be needed](https://github.com/precice
 Now build the library:
 
 ```bash
-make lib 
+make lib
 ```
 
 </details>
@@ -86,14 +86,14 @@ Download Arpack and patch:
 
 ```bash
 wget https://web.archive.org/web/20220526222500fw_/https://www.caam.rice.edu/software/ARPACK/SRC/arpack96.tar.gz
-wget https://web.archive.org/web/20220526222500fw_/https://www.caam.rice.edu/software/ARPACK/SRC/patch.tar.gz 
+wget https://web.archive.org/web/20220526222500fw_/https://www.caam.rice.edu/software/ARPACK/SRC/patch.tar.gz
 ```
 
 Unpack them (they will be unpacked in the newly created directory `ARPACK`)
 
 ```bash
-tar xzfv arpack96.tar.gz 
-tar xzfv patch.tar.gz 
+tar xzfv arpack96.tar.gz
+tar xzfv patch.tar.gz
 cd ARPACK
 ```
 
@@ -106,7 +106,7 @@ Edit by hand `ARmake.inc` to specify build instructions. The following changes w
 
 ```make
 FC = gfortran
-#FFLAGS = -O -cg89 
+#FFLAGS = -O -cg89
 ```
 
 - **Line 35**: Modify the platform suffix for the library and remember it, since Calculix adapter makefile will depend on it ( by default it will use suffix INTEL for Linux and MAC for mac systems). For example change

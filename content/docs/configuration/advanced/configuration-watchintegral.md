@@ -10,7 +10,7 @@ This feature is only available for preCICE versions >= v2.2
 {% endimportant %}
 
 ```xml
-<participant name="MySolver1"> 
+<participant name="MySolver1">
     <provide-mesh name="MyMesh1"/>
     ...
     <watch-integral mesh="MyMesh1" name="MyWatchIntegral" scale-with-connectivity="yes"/>

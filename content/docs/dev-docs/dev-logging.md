@@ -69,7 +69,7 @@ Examples of wanings:
 
 ```text
 3D Mesh "MyCloud" does not contain triangles. Nearest projection mapping will map to primitives of lower dimension.
-The relative convergence limit="1e-8" is close to the hard-coded numerical resolution="1e-9" of preCICE. This may lead to instabilities. The minimum relative convergence limit should be > "1e-9".  
+The relative convergence limit="1e-8" is close to the hard-coded numerical resolution="1e-9" of preCICE. This may lead to instabilities. The minimum relative convergence limit should be > "1e-9".
 ```
 
 ## Formatting

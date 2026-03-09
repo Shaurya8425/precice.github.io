@@ -576,8 +576,8 @@ You can do a quick test:
 
 ```bash
 (precice) $ python
-Python 3.12.9 | packaged by conda-forge | (main, Mar  4 2025, 22:48:41) [GCC 13.3.0] on linux                                                                                           
-Type "help", "copyright", "credits" or "license" for more information.  
+Python 3.12.9 | packaged by conda-forge | (main, Mar  4 2025, 22:48:41) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
 >>> import fenics
 >>> fenics.Expression("x[0] + x[1]", degree=0)
 ```
@@ -585,7 +585,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 You might face this problem:
 
 ```bash
-/.../.conda/envs/precice/lib/python3.12/site-packages/dolfin/jit/jit.py:46: RuntimeWarning: mpi4py.MPI.Session size changed, may indicate binary incompatibility. Expected 32 from C header, got 40 from PyObject                                                                                                                                       
+/.../.conda/envs/precice/lib/python3.12/site-packages/dolfin/jit/jit.py:46: RuntimeWarning: mpi4py.MPI.Session size changed, may indicate binary incompatibility. Expected 32 from C header, got 40 from PyObject
 ```
 
 Please check your `mpi4py` version via `python -c "import mpi4py; print(mpi4py.__version__)`. If you are using a version `>= 4.x`, downgrade to the `3.x` version by running

@@ -36,7 +36,7 @@ make install
 yaml-cpp 0.5.3 is known to work. Newer version may also work. yaml-cpp can be downloaded from
 
 ```bash
-wget https://github.com/jbeder/yaml-cpp/archive/release-0.5.3.tar.gz -O - | tar xz 
+wget https://github.com/jbeder/yaml-cpp/archive/release-0.5.3.tar.gz -O - | tar xz
 ```
 
 ## Module List
@@ -44,7 +44,7 @@ wget https://github.com/jbeder/yaml-cpp/archive/release-0.5.3.tar.gz -O - | tar 
 The following modules available in superMUC are known to work for the CalculiX adapter installation.
 
 1. python/3.5_anaconda_nompi
-2. scons/3.0.1  
+2. scons/3.0.1
 3. valgrind/3.10
 4. petsc/3.8
 5. boost/1.65_gcc

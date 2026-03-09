@@ -73,6 +73,6 @@ dimensions. Index 1 is given to the object with coordinates nearest to zero, bes
       | 2 | 3 |
 dim 2 |-------|
   ^   | 0 | 1 |
-  |   ---------  
+  |   ---------
    --> dim 1
 ```

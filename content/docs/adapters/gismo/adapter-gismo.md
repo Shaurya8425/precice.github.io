@@ -22,7 +22,7 @@ This adapter can read/write the following fields in a surface coupling setup:
 - Pressure (read)
 - Velocity (write)
 - Velocity surface-normal gradient (write)
-  
+
 All features of preCICE are supported, including implicit coupling, nearest-projection mapping and radial basis function based mapping.
 
 ## Aim of the adapter

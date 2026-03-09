@@ -46,7 +46,7 @@ while not simulation_done(): # time loop
   precice_dt = precice.get_max_time_step_size()
   solver_dt = begin_time_step() # e.g. compute adaptive dt
   dt = min(precice_dt, solver_dt)
-  solve_time_step(dt) 
+  solve_time_step(dt)
   precice.advance(dt)
   end_time_step() # e.g. update variables, increment time
 ```
@@ -375,7 +375,7 @@ precice.finalize();
 ```python
 while precice.is_coupling_ongoing(): # time loop
   ...
-precice.finalize()  
+precice.finalize()
 ```
 
 </div>

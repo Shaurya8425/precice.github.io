@@ -1,6 +1,6 @@
 ---
 title: "Coupling Algorithms for Partitioned Multi-Physics Simulations"
-pub-url: http://subs.emis.de/LNI/Proceedings/Proceedings232/113.pdf 
+pub-url: http://subs.emis.de/LNI/Proceedings/Proceedings232/113.pdf
 year: 2014
 authors: "Bernhard Gatzhammer, Miriam Mehl, Benjamin Uekermann"
 ---

@@ -151,7 +151,7 @@ The cost of lunch, as well as coffee and snacks is included in the registration 
         Quasi-Newton methods for time adaptive waveform iterations<br/>
         <p><a href="https://www.lunduniversity.lu.se/lucat/user/9a5a021777b3e7cb0b8aea7ee9094808">Niklas Kotarsky</a> (<a href="https://github.com/NiklasKotarsky/">@NiklasKotarsky</a>), Lund University, Sweden</p>
       </summary>
-      <p>We consider methods for dynamic coupled problems, in particular partitioned solvers for ﬂuid-structure interaction and thermal transfer where different sub-solvers are used for the different domains. To further improve the computational efficiency, different and adaptive time steps in the sub solvers are employed. Using so called waveform iterations, these goals have previously been achieved for heat transfer problems using relaxation. Quasi-Newton methods have recently been combined with waveform iterations for the case of constant time grids.  
+      <p>We consider methods for dynamic coupled problems, in particular partitioned solvers for ﬂuid-structure interaction and thermal transfer where different sub-solvers are used for the different domains. To further improve the computational efficiency, different and adaptive time steps in the sub solvers are employed. Using so called waveform iterations, these goals have previously been achieved for heat transfer problems using relaxation. Quasi-Newton methods have recently been combined with waveform iterations for the case of constant time grids.
       In this talk we further extend the quasi-Newton waveform iterations to the time adaptive case, where both of the sub-solvers use an adaptive time stepping scheme. We also give an overview of the convergence properties of time adaptive waveform iteration and quasi Newton methods as well as proposing an implementation of quasi-Newton acceleration for waveform iterations in the open source coupling library preCICE.  Lastly, we also show that using a time adaptive solver results in faster run times for a simple partitioned heat conduction test case, as well as a more realistic non-linear test case where a hot piece of steel is cooled by an air stream.
       </p>
     </details>
@@ -303,7 +303,7 @@ If you are new to preCICE, this is the perfect way to get started. September 24 
   <details class="workshop-event" id="courseII"><summary>preCICE Course II: Tools</summary>
   <p>Instructors: <a href="https://www.ipvs.uni-stuttgart.de/institute/team/Chourdakis/">Gerasimos Chourdakis</a>, <a href="https://www.simtech.uni-stuttgart.de/exc/people/Uekermann/">Benjamin Uekermann</a><br/>
   Affiliation: University of Stuttgart, preCICE developers.</p>
-  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>  
+  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>
   <p>In this second part, we take a tour over available tools to configure, understand, and post-process preCICE simulations. More specifically, we have a look at the preCICE logger, config visualizer, mesh exports, and watchpoints of preCICE. We also discuss common tips for visualizing partitioned simulations in ParaView.</p>
   <p>Read more details and software requirements in the <a href="community-training.html">preCICE training page</a>.</p>
   </details>
@@ -311,7 +311,7 @@ If you are new to preCICE, this is the perfect way to get started. September 24 
   <details class="workshop-event" id="courseIII"><summary>preCICE Course III: Implicit Coupling</summary>
   <p>Instructors: <a href="https://www.ipvs.uni-stuttgart.de/institute/team/Chourdakis/">Gerasimos Chourdakis</a>, <a href="https://www.simtech.uni-stuttgart.de/exc/people/Uekermann/">Benjamin Uekermann</a><br/>
   Affiliation: University of Stuttgart, preCICE developers.</p>
-  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>  
+  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>
   <p>In this third part, we use a conjugate heat conduction scenario coupling OpenFOAM with Nutils to study implicit coupling.</p>
   <p>Read more details and software requirements in the <a href="community-training.html">preCICE training page</a>.</p>
   </details>
@@ -319,7 +319,7 @@ If you are new to preCICE, this is the perfect way to get started. September 24 
   <details class="workshop-event" id="courseIV"><summary>preCICE Course IV: Data Mapping (updated)</summary>
   <p>Instructors: <a href="https://www.ipvs.uni-stuttgart.de/institute/team/Chourdakis/">Gerasimos Chourdakis</a>, <a href="https://www.simtech.uni-stuttgart.de/exc/people/Uekermann/">Benjamin Uekermann</a><br/>
   Affiliation: University of Stuttgart, preCICE developers.</p>
-  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>  
+  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>
   <p>In this fourth part, we will explore aspects of accuracy and efficiency in data mapping, using <a href="tooling-aste.html">ASTE</a>.</p>
   <p>Compared to last year, this course part has been redesigned keeping in mind the recent mapping improvements in preCICE v3.</p>
   <p>Read more details and software requirements in the <a href="community-training.html">preCICE training page</a>.</p>
@@ -328,7 +328,7 @@ If you are new to preCICE, this is the perfect way to get started. September 24 
   <details class="workshop-event" id="courseV"><summary>preCICE Course V: FSI Workflow (new)</summary>
   <p>Instructors: <a href="https://github.com/Ccaccia73">Claudio Caccia</a>, <a href="https://www.ipvs.uni-stuttgart.de/institute/team/Chourdakis/">Gerasimos Chourdakis</a><br/>
   Affiliation: Politecnico di Milano, University of Stuttgart.</p>
-  <p>A community-contributed training module showcasing how to setup an fluid-structure interaction simulation from scratch, coupling <a href="adapter-openfoam-overview.html">OpenFOAM</a> and <a href="adapter-calculix-overview.html">CalculiX</a> for the flow around a wing.</p>  
+  <p>A community-contributed training module showcasing how to setup an fluid-structure interaction simulation from scratch, coupling <a href="adapter-openfoam-overview.html">OpenFOAM</a> and <a href="adapter-calculix-overview.html">CalculiX</a> for the flow around a wing.</p>
   <p>This covers the steps of mesh preparation (with FreeCAD for CalculiX, and snappyHexMesh for OpenFOAM), the structure and flow simulations, and finally the coupled FSI simulation.</p>
   <p>Read more details and software requirements in the <a href="community-training.html">preCICE training page</a>.</p>
   </details>
@@ -353,7 +353,7 @@ Registration is open until September 15. Register before July 15 to benefit from
 
 You can register for the full workshop (talks + course) or for the main part (only talks), in case you already know the topics covered by the course or you cannot attend on the first days.
 
-[To registration](https://tagung.informatik-forum.org/preCICE2024/register)  
+[To registration](https://tagung.informatik-forum.org/preCICE2024/register)
 
 ### Early-bird registration fee
 
@@ -410,7 +410,7 @@ For questions related to the 2024 preCICE workshop, write us at [preCICE2024@sim
       "endDate": "2024-09-27",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {  
+      "location": {
         "@type": "Place",
         "name": "University of Stuttgart",
         "address": {

@@ -27,16 +27,16 @@ The following is a diff of how an adapter-port could look like. The guide contin
 ```diff
 - #include "precice/SolverInterface.hpp"
 + #include "precice/precice.hpp"
-  
+
   turnOnSolver(); //e.g. setup and partition mesh
-  
+
 - precice::SolverInterface participant("FluidSolver","precice-config.xml",rank,size); // constructor
 + precice::Participant     participant("FluidSolver","precice-config.xml",rank,size); // constructor
-  
+
 - const std::string& coric = precice::constants::actionReadIterationCheckpoint();
 - const std::string& cowic = precice::constants::actionWriteIterationCheckpoint();
 - const std::string& cowid = precice::constants::actionWriteInitialData();
-  
+
 - int dim = participant.getDimension();
 + int dim = participant.getMeshDimensions("FluidMesh");
 - int meshID = precice.getMeshID("FluidMesh");
@@ -50,7 +50,7 @@ The following is a diff of how an adapter-port could look like. The guide contin
   std::vector<int> vertexIDs(vertexSize);
 - precice.setMeshVertices(meshID, vertexSize, coords.data(), vertexIDs.data());
 + precice.setMeshVertices("FluidMesh", coords, vertexIDs);
-  
+
 - int displID = precice.getDataID("Displacements", meshID);
 - int forceID = precice.getDataID("Forces", meshID);
 - std::vector<double> forces(vertexSize*dim);
@@ -59,11 +59,11 @@ The following is a diff of how an adapter-port could look like. The guide contin
 + const int displDim = participant.getDataDimensions("FluidMesh", "Displacements")
 + std::vector<double> forces(vertexSize*forceDimn);
 + std::vector<double> displacements(vertexSize*displDim);
-  
+
   double solverDt; // solver timestep size
   double preciceDt; // maximum precice timestep size
   double dt; // actual time step size
-  
+
 - preciceDt = participant.initialize();
 - if (participant.isActionRequired(cowid)) {
 -   participant.writeBlockVectorData(forceID, vertexSize, vertexIDs.data(), forces.data());
@@ -74,18 +74,18 @@ The following is a diff of how an adapter-port could look like. The guide contin
 +   participant.writeData("FluidMesh", "Forces", vertexIDs, forces);
 + }
 + participant.initialize();
-  
+
   while (participant.isCouplingOngoing()){
 -   if(participant.isActionRequired(cowic)){
 +   if(participant.requiresWritingCheckpoint()){
       saveOldState(); // save checkpoint
 -     participant.markActionFulfilled(cowic);
     }
-  
+
 +   preciceDt = participant.getMaxTimeStepSize();
     solverDt = beginTimeStep(); // e.g. compute adaptive dt
     dt = min(preciceDt, solverDt);
-  
+
 -   participant.readBlockVectorData(displID, vertexSize, vertexIDs.data(), displacements.data());
 +   participant.readData("FluidMesh", "Displacements", vertexIDs, dt, displacements);
     setDisplacements(displacements);
@@ -93,10 +93,10 @@ The following is a diff of how an adapter-port could look like. The guide contin
     computeForces(forces);
 -   participant.writeBlockVectorData(forceID, vertexSize, vertexIDs.data(), forces.data());
 +   participant.writeData("FluidMesh", "Forces", vertexIDs, forces);
-  
+
 -   preciceDt = participant.advance(dt);
 +   participant.advance(dt);
-  
+
 -   if (participant.isActionRequired(coric)) { // timestep not converged
 +   if (participant.requiresReadingCheckpoint()) {
       reloadOldState(); // set variables back to checkpoint
@@ -107,7 +107,7 @@ The following is a diff of how an adapter-port could look like. The guide contin
     }
   }
   participant.finalize(); // frees data structures and closes communication channels
-  
+
   turnOffSolver();
 ```
 

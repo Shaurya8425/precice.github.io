@@ -27,7 +27,7 @@ The tools for processing profiling data can be found in two main locations:
 Install the tools using pipx:
 
 ```console
-$ pipx install precice-cli 
+$ pipx install precice-cli
 creating virtual environment...
 installing precice-cli...
 done! ✨ 🌟 ✨

@@ -21,7 +21,7 @@ Add the Julia bindings in the Julia prompt by typing:
 
 ```julia-repl
 julia> ]
-pkg> add PreCICE 
+pkg> add PreCICE
 ```
 
 Alternatively you can also include the package in a Julia script in the following way:

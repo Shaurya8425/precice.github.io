@@ -29,9 +29,9 @@ Note: PETSc is an optional dependency, only needed for parallel RBF mapping, whi
 
 There are multiple problems than can lead to FindPETSc failing:
 
-1. `PETSC_DIR`and `PETSC_ARCH` not set, or set incorrectly.  
+1. `PETSC_DIR`and `PETSC_ARCH` not set, or set incorrectly.
    In this case, FindPETSc fails **before** running tests.
-2. _Pre 1.5.0:_ Compiler CXX not set to the compiler wrapper provided by your MPI distribution.  
+2. _Pre 1.5.0:_ Compiler CXX not set to the compiler wrapper provided by your MPI distribution.
    In this case, FindPETSc fails **after** running tests.
 
 Find more regarding PETSc-related issues on [our forum](https://precice.discourse.group/tag/petsc).

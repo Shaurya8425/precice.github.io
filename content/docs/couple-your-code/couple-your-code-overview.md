@@ -20,7 +20,7 @@ There is a [step-by-step guide](couple-your-code-preparing-your-solver.html), wh
 
 ## Advanced topics
 
-There is a list of advanced topics. These topics are not all relevant to every user. They deal with specific problems for certain types of codes: how to handle FEM meshes, how to handle moving meshes, etc.  
+There is a list of advanced topics. These topics are not all relevant to every user. They deal with specific problems for certain types of codes: how to handle FEM meshes, how to handle moving meshes, etc.
 
 ## What best practices should I follow?
 

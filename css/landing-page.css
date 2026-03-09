@@ -4,11 +4,17 @@
 /* clear fixes */
 /* idea is to not touch the docs part of the website, but start from a clear state */
 
-h1[id], h2[id], h3[id], h4[id], h5[id], h6[id],
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
 dt[id] {
-padding-top: 0px;
-margin-top: 0px
+  padding-top: 0px;
+  margin-top: 0px
 }
+
 .panel {
   margin-bottom: 0px;
 }
@@ -16,20 +22,25 @@ margin-top: 0px
 /* general styles */
 
 @media (max-width: 992px) {
-  .panel{
+  .panel {
     margin-top: 10px;
   }
-  img.col-xs-12{
+
+  img.col-xs-12 {
     margin-top: 20px;
   }
 }
+
 .section {
   padding-top: 70px;
-  padding-bottom: 65px; /* +20px margin-bottom of .row */
+  padding-bottom: 65px;
+  /* +20px margin-bottom of .row */
 }
+
 .section-header {
   margin-bottom: 0px;
 }
+
 .row {
   margin-bottom: 20px;
 }
@@ -38,7 +49,8 @@ margin-top: 0px
 /* Jumbotron */
 
 .banner {
-  margin-bottom: -20px; /* counter-balance .row margin */
+  margin-bottom: -20px;
+  /* counter-balance .row margin */
   padding: 15px 0;
   color: #040606;
 }
@@ -49,19 +61,23 @@ h1.title {
   margin-top: 0px;
   color: #040606;
 }
+
 h2.subtitle {
   padding-top: 0px;
   margin-top: -5px;
   margin-bottom: 20px;
   font-weight: 400;
 }
+
 .action-button {
   margin-right: 4px;
   margin-bottom: 10px;
 }
+
 .action-button-container {
   margin-bottom: 20px;
 }
+
 #github-button #stargazers {
   font-size: 0.857142em;
   font-weight: 500;
@@ -73,18 +89,22 @@ ul.usp {
   padding-inline-start: 1.75em;
   margin-bottom: 15px;
 }
+
 li.usp {
   margin-bottom: 0.5em;
 }
+
 div.panel.usp {
   margin-bottom: 0;
   flex: 1 1 auto;
 }
+
 div.image-holder.usp {
   padding: 20px;
   flex: 0 1 150px;
 }
-div.image-holder.usp > img {
+
+div.image-holder.usp>img {
   height: 150px;
 }
 
@@ -93,60 +113,76 @@ div.image-holder.usp > img {
 a.adapter {
   text-decoration: none;
 }
-a.adapter > div.panel-primary {
-  border-color: rgba(10,118,187, .8);
+
+a.adapter>div.panel-primary {
+  border-color: rgba(10, 118, 187, .8);
 }
-a.adapter:hover > div.panel-primary {
-  background-color: rgba(10,118,187, .08);
+
+a.adapter:hover>div.panel-primary {
+  background-color: rgba(10, 118, 187, .08);
 }
+
 img.adapter {
   height: 125px;
   width: 125px;
   object-fit: contain;
   transition: all 400ms;
 }
+
 img.adapter:hover {
-   transform: scale(1.10);
+  transform: scale(1.10);
 }
-img.adapter.custom-logo{
+
+img.adapter.custom-logo {
   padding: 0;
 }
+
 .btn.adapter {
   margin: 20px 0;
 }
+
 .img-equivalent {
   height: 125px;
   width: 125px;
 }
+
 .adapter p {
   color: #040606;
   margin-top: 20px;
 }
+
 a.adapter {
   color: #040606;
 }
 
 /* Testimonials */
 
-i.fa-quote-left{
+i.fa-quote-left {
   color: darkgrey;
   padding-right: 0.5em;
 }
-i.fa-quote-left, i.fa-quote-right {
+
+i.fa-quote-left,
+i.fa-quote-right {
   color: darkgrey;
   padding-left: 0.5em;
 }
-p.quote, p.quote > a, p.quote > a:visited {
+
+p.quote,
+p.quote>a,
+p.quote>a:visited {
   font-size: 19px;
   font-weight: 400;
   color: #333;
 }
-p.quote > a:hover,
-p.quote > a:hover > i.fa-quote-left,
-p.quote > a:hover > i.fa-quote-right  {
+
+p.quote>a:hover,
+p.quote>a:hover>i.fa-quote-left,
+p.quote>a:hover>i.fa-quote-right {
   color: black;
   text-decoration: none;
 }
+
 img.testimonial {
   border-radius: 50%;
   border: 1px solid #ddd;
@@ -155,6 +191,7 @@ img.testimonial {
   float: left;
   margin: 0 15px 0 0;
 }
+
 .full-height {
   flex: 1 1 auto;
 }
@@ -164,17 +201,22 @@ img.testimonial {
 .uni-logo {
   max-width: 100px;
 }
+
 .img-equivalent-uni-logo {
   height: 125px;
   width: 100px;
 }
-.github-link, .github-link:hover {
+
+.github-link,
+.github-link:hover {
   color: #333;
   text-decoration: none;
 }
+
 .github-link p {
   padding-top: 1em;
 }
+
 /* see bookcover.css */
 .literature-link {
   margin-top: 20px;
@@ -189,53 +231,94 @@ img.testimonial {
 /* preCICE support */
 
 img.precice-support {
-  max-height: 200px
+  max-height: 200px;
 }
 
 /* Logowall */
+.filter-btn {
+  margin: 4px;
+  padding: 8px 20px;
+  border: 2px solid #0092dd;
+  background: transparent;
+  color: #0092dd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
 
-.logo, .logo > div, .logo > p {
+.filter-btn:hover,
+.filter-btn.active {
+  background: #0092dd;
+  color: #fff;
+}
+
+.logo-item {
+  transition: opacity 0.2s ease;
+}
+
+.logo-item.hidden {
+  display: none;
+}
+
+.logo,
+.logo>div,
+.logo>p {
   color: #333;
   opacity: 0.5;
   filter: grayscale(100%);
   transition: all 200ms;
 }
+
 @media (max-width: 992px) {
-   .logo, .logo > div, .logo > p {
-      opacity: 1;
-      filter: grayscale(0%);
-    }
+
+  .logo,
+  .logo>div,
+  .logo>p {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
 }
-.logo > p {
+
+.logo>p {
   margin: 0;
   text-decoration: none;
 }
-.logo:hover, .logo:hover > div, .logo:hover > p {
+
+.logo:hover,
+.logo:hover>div,
+.logo:hover>p {
   opacity: 1;
   filter: grayscale(0%);
   text-decoration: none;
 }
-.logo:hover > div {
+
+.logo:hover>div {
   transform: scale(1.05);
 }
+
 p.institution {
   font-size: 0.8em;
   font-weight: 400;
   line-height: 1.2em;
   margin-top: 0.5em;
 }
+
 p.country {
   font-size: 0.8em;
   font-weight: 700;
   /*margin-top: -0.25em;*/
   margin-bottom: 1em;
 }
+
 div.logo-holder {
   height: 75px;
 }
-div.logo-holder > img {
+
+div.logo-holder>img {
   max-height: 75px;
 }
+
 .no-padding {
   padding: 0;
 }
@@ -262,7 +345,7 @@ div.logo-holder > img {
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .news-card a.news-link {
@@ -308,10 +391,11 @@ div.logo-holder > img {
 
 @media (max-width: 768px) {
   #news-container {
-    flex-wrap: wrap;         
+    flex-wrap: wrap;
   }
+
   #news-container .col-md-4 {
-    flex: 1 1 100%;         
+    flex: 1 1 100%;
   }
 }
 

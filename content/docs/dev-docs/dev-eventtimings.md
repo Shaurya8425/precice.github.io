@@ -31,7 +31,7 @@ void bar()
 
 // You can manually stop it to measure a section only
 void foo()
-{ 
+{
   // ...
 
   Event e("selection");

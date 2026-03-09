@@ -1,31 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
 
-<head>
-	{% include head.html %}
-</head>
+  <body>
+    <header>
+      {% include topnav.html %}
+      <!-- News banner -->
+      {% include news_banner.html onlanding=true %}
+    </header>
+    <main>
+      <!-- Page Content -->
+      {{ content }}
+    </main>
 
-<body>
-	<header>
-		{% include topnav.html %}
-		<!-- News banner -->
-		{% include news_banner.html onlanding=true %}
-	</header>
-	<main>
-		<!-- Page Content -->
-		{{content}}
-	</main>
+    {% include footer.html %}
 
-	{% include footer.html %}
+    <script src="{{ '/js/github-queries.js' | relative_url }}"></script>
 
-	<script src="{{ '/js/github-queries.js' | relative_url }}"></script>
+    <script src="{{ '/js/news-collect.js' | relative_url }}"></script>
 
-	<script src="{{ '/js/news-collect.js' | relative_url }}"></script>
+    <script src="{{ '/js/logowall-toggle.js' | relative_url }}"></script>
+  </body>
 
-</body>
-
-{% if site.google_analytics %}
-{% include google_analytics.html %}
-{% endif %}
-
+  {% if site.google_analytics %}
+    {% include google_analytics.html %}
+  {% endif %}
 </html>

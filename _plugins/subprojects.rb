@@ -25,7 +25,7 @@ module Jekyll
         end
 
         # Register the tutorial README as a page
-        pages = Dir.chdir(location) do 
+        pages = Dir.chdir(location) do
           Dir.foreach(".").reject{ |f| File.directory?(f) || f.end_with?(".") }.select{ |f| Utils.has_yaml_header?(site.in_source_dir(File.join(location, f))) }
         end
 
@@ -47,7 +47,7 @@ module Jekyll
           to = File.join(image_dest, image)
           Jekyll.logger.debug("Registering:", "#{from}")
 
-          # Check for 
+          # Check for
           if static_filenames.include?(image)
             message = "#{image} was already added by subproject #{static_filenames[image]}!"
             Jekyll.logger.error("Collision detected:", message)

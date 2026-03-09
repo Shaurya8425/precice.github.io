@@ -114,7 +114,7 @@ Order of authors: maintainers are listed first followed by everybody else, both 
     download_commit () {
       repo_name=$1
       hash=$2
-      
+
       wget -nv https://github.com/precice/${repo_name}/archive/${hash}.zip
       unzip -q ${hash}.zip
       rm ${hash}.zip

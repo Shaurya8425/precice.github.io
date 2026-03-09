@@ -17,7 +17,7 @@ Both sessions take place on **Thursday 9th June** in room **Oslo 1**:
 
 ### Thursday, June 9, 2022, 14:00–16:00
 
-Room: Oslo 1 (GF)  
+Room: Oslo 1 (GF)
 Session: [MS46A](https://www.eccomas2022.org/frontal/ProgSesion.asp?id=117)
 
 * **Frédéric Simonis et al.**:
@@ -40,7 +40,7 @@ Heat and mass transfer between XDEM \& OPENFOAM using preCICE coupling library
 
 ### Thursday, June 9, 2021, 16:30–18:30
 
-Room: Oslo 1 (GF)  
+Room: Oslo 1 (GF)
 Session: [MS46B](https://www.eccomas2022.org/frontal/ProgSesion.asp?id=240)
 
 * **Arved Enders-Seidlitz et al.**:

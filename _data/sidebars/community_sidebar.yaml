@@ -46,7 +46,7 @@ entries:
     - title: Workshop 2020
       url: /precice-workshop-2020.html
       output: web
-    
+
     - title: Organizing
       url: /precice-workshop-organizing.html
       output: web
@@ -62,7 +62,7 @@ entries:
     - title: ECCOMAS Coupled Problems 2025
       url: /eccomas-coupled-2025.html
       output: web
-    
+
     - title: iacm WCCM 2024
       url: /iacm-wccm-2024.html
       output: web
@@ -82,11 +82,11 @@ entries:
     - title: ECCOMAS WCCM 2020
       url: /community-events-wccm-eccomas-2020.html
       output: web
-    
+
     - title: ECCOMAS Coupled Problems 2019
       url: /eccomas-coupled-2019.html
       output: web
-    
+
     - title: ECCOMAS ECCM-ECFD 2018
       url: /eccomas-eccm-ecfd-2018.html
       output: web
@@ -94,7 +94,7 @@ entries:
   - title: Support preCICE
     url: /community-support-precice.html
     output: web
-    
+
   - title: Training
     url: /community-training.html
     output: web
@@ -114,19 +114,19 @@ entries:
     - title: Contribute to preCICE
       url: /community-contribute-to-precice.html
       output: web
-    
+
     - title: Open projects
       url: /community-contribute-open-projects.html
       output: web
-    
+
     - title: Adapter guidelines
       url: /community-guidelines-adapters.html
       output: web
-    
+
     - title: Application case guidelines
       url: /community-guidelines-application-cases.html
       output: web
-        
+
     - title: Example - OpenFOAM adapter
       url: /community-guidelines-adapters-openfoam.html
       output: web
@@ -142,11 +142,7 @@ entries:
     - title: Example - DuMux adapter
       url: /community-guidelines-adapters-dumux.html
       output: web
-    
+
   - title: Community channels
     url: /community-channels.html
     output: web
-
-
-    
-

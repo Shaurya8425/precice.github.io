@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           </h4>
           <p style="color:#333;line-height:1.4;">
             ${excerpt}
-            <a href="${t.url}" target="_blank" rel="noopener noreferrer" 
+            <a href="${t.url}" target="_blank" rel="noopener noreferrer"
                style="text-decoration:none;color:#0069c2;" data-noicon>
               Read more
             </a>

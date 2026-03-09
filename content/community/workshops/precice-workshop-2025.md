@@ -382,7 +382,7 @@ Did you know? Many past participants only discovered this workshop via a direct 
       "endDate": "2025-09-12",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {  
+      "location": {
         "@type": "Place",
         "name": "Helmut-Schmidt University of Hamburg",
         "address": {

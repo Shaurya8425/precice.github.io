@@ -37,7 +37,7 @@ Result:
 
 ```text
 Configuration file: E:/code/precice.github.io_new/_config.yml
-Processing site...                                                             
+Processing site...
         Subproject: imported/tutorials/quickstart
       Adding pages: README.md
         Subproject: imported/tutorials/elastic-tube-1d
@@ -72,13 +72,13 @@ Processing site...
 Progress: |====================================================================|
 
 Progress: |==========================================Settings are already up todate.
-Getting list of existing records                                               
-Updating records in index jekyll...                                            
-Records to delete: 1582                                                        
-Records to add: 1718                                                           
+Getting list of existing records
+Updating records in index jekyll...
+Records to delete: 1582
+Records to add: 1718
 
 Progress: |====================================================================|
-✔ Indexing complete                                                            
+✔ Indexing complete
 ```
 
 Be aware, that updates to the index count towards the limit of free operations, so it is recommended to update once a month.

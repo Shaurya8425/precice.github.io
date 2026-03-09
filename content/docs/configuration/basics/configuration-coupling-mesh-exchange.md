@@ -2,7 +2,7 @@
 title: Mesh exchange example
 permalink: configuration-coupling-mesh-exchange.html
 keywords: configuration, mesh exchange, example, read, write
-summary: If you struggle with which mesh you should use where in the configuration and whether a mapping is read or write, you might find this example helpful. 
+summary: If you struggle with which mesh you should use where in the configuration and whether a mapping is read or write, you might find this example helpful.
 ---
 
 People that are new to preCICE typically struggle with the same things in the configuration:
@@ -17,20 +17,20 @@ All this sounds complicated at first, but is relatively clear once you draw the 
 
 ```xml
 ...
-<participant name="MySolver1"> 
-    <provide-mesh name="MyMesh1"/> 
-    <receive-mesh name="MyMesh2" from="MySolver2"/> 
-    <read-data name="Temperature" mesh="MyMesh1"/> 
-    <write-data name="Forces" mesh="MyMesh1"/> 
+<participant name="MySolver1">
+    <provide-mesh name="MyMesh1"/>
+    <receive-mesh name="MyMesh2" from="MySolver2"/>
+    <read-data name="Temperature" mesh="MyMesh1"/>
+    <write-data name="Forces" mesh="MyMesh1"/>
     <mapping:nearest-neighbor direction="read" from="MyMesh2" to="MyMesh1" constraint="consistent"/>
     <mapping:nearest-neighbor direction="write" from="MyMesh1" to="MyMesh2" constraint="conservative"/>
 ...
 </participant>
 
-<participant name="MySolver2"> 
-    <provide-mesh name="MyMesh2"/> 
-    <read-data name="Forces" mesh="MyMesh2"/> 
-    <write-data name="Temperature" mesh="MyMesh2"/> 
+<participant name="MySolver2">
+    <provide-mesh name="MyMesh2"/>
+    <read-data name="Forces" mesh="MyMesh2"/>
+    <write-data name="Temperature" mesh="MyMesh2"/>
 ...
 </participant>
 

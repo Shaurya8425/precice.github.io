@@ -43,10 +43,10 @@ You need to define which data values the coupled solvers want to exchange, e.g. 
 Next, you can define the interface coupling meshes.
 
 ```xml
-<mesh name="MyMesh1" dimensions="3"> 
-  <use-data name="Temperature"/> 
-  <use-data name="Forces"/> 
-</mesh> 
+<mesh name="MyMesh1" dimensions="3">
+  <use-data name="Temperature"/>
+  <use-data name="Forces"/>
+</mesh>
 ```
 
 The value `dimensions` needs to match the physical dimension of the mesh, i.e. the number of coordinates a vertex has in `setMeshVertex`, etc. Some solvers only support 3D simulation, such as OpenFOAM or CalculiX. In this case the adapter maps from 3D to 2D if the mesh dimension is 2D. This, of course, only works if you simulate a quasi-2D scenario with one layer of cells in z direction.
@@ -58,10 +58,10 @@ The value `dimensions` needs to match the physical dimension of the mesh, i.e. t
 Each solver that participates in the coupled simulation needs a participant definition. You need to define at least two participants.
 
 ```xml
-<participant name="MySolver1"> 
-  <provide-mesh name="MyMesh1"/> 
-  <read-data name="Temperature" mesh="MyMesh1"/> 
-  <write-data name="Forces" mesh="MyMesh1"/> 
+<participant name="MySolver1">
+  <provide-mesh name="MyMesh1"/>
+  <read-data name="Temperature" mesh="MyMesh1"/>
+  <write-data name="Forces" mesh="MyMesh1"/>
   ...
 </participant>
 ```
@@ -81,13 +81,13 @@ precice.setMeshVertices("MyMesh1", coords, vertexIDs);
 The other option is to receive the mesh coordinates from another participant (who defines them):
 
 ```xml
-<receive-mesh name="MyMesh2" from="MySolver2"/> 
+<receive-mesh name="MyMesh2" from="MySolver2"/>
 ```
 
 If a participant uses at least two meshes, you can define a data mapping between both:
 
 ```xml
-<mapping:nearest-neighbor direction="read" from="MyMesh2" to="MyMesh1" constraint="consistent"/> 
+<mapping:nearest-neighbor direction="read" from="MyMesh2" to="MyMesh1" constraint="consistent"/>
 ```
 
 `nearest-neighbor` means that the nearest-neighbor mapping method is used to map data from `MyMesh1` to `MyMesh2`.
@@ -101,7 +101,7 @@ Read more about the [mapping configuration](configuration-mapping.html), or see 
 If two participants should exchange data, they need a communication channel.
 
 ```xml
-<m2n:sockets acceptor="MySolver1" connector="MySolver2" />   
+<m2n:sockets acceptor="MySolver1" connector="MySolver2" />
 ```
 
 Read more about the [communication configuration](configuration-communication.html), or see the full [configuration reference](configuration-xml-reference.html).
@@ -113,13 +113,13 @@ Read more about the [communication configuration](configuration-communication.ht
 At last, you need to define how the two participants exchange data. If you want an explicit coupling scheme (no coupling subiterations), you can use:
 
 ```xml
-<coupling-scheme:parallel-explicit> 
-  <participants first="MySolver1" second="MySolver2"/> 
-  <max-time value="1.0"/> 
-  <time-window-size value="1e-2"/> 
+<coupling-scheme:parallel-explicit>
+  <participants first="MySolver1" second="MySolver2"/>
+  <max-time value="1.0"/>
+  <time-window-size value="1e-2"/>
   <exchange data="Forces" mesh="MyMesh2" from="MySolver1" to="MySolver2"/>
   <exchange data="Temperature" mesh="MyMesh2" from="MySolver2" to="MySolver1"/>
-</coupling-scheme:parallel-explicit>    
+</coupling-scheme:parallel-explicit>
 ```
 
 `parallel` means here that both solver run at the same time. In this case, who is `first` and `second` only plays a minor role. `max-time` is the complete simulation time. After this time,

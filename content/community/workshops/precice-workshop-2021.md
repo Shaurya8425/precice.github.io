@@ -136,7 +136,7 @@ The workshop stretches from Monday noon to Thursday evening.
    <p>Authors: <a>David Schneider</a> <br/></p>
    <p>This talk will cover the deal.II adapter and implementation.</p>
    </details>
-  
+
    <details class="workshop-event" id="Desai"><summary>Ishaan Desai: FEniCS Adapter</summary>
    <p>Authors: <a>Ishaan Desai</a> <br/></p>
    <p>This talk will cover the FEniCS adapter and implementation.</p>
@@ -152,7 +152,7 @@ The workshop stretches from Monday noon to Thursday evening.
    <p>Combined with the talk above. This talk will highlight how you (yes, you) can contribute to preCICE or what makes a good preCICE user.
   We will discuss how to use the communication channels effectively and where the developers team needs help.</p>
    </details>
-  
+
 * 14:30 - 15:00 Speakers in breakout rooms for Q&A
 * 15:00 - 16:00 Break (Offline)
 * 16:00 - 17:00 Workshop feedback (Main Hall)
@@ -178,7 +178,7 @@ The workshop stretches from Monday noon to Thursday evening.
 <p>Please use the registration form to register.<p>
 
 <p>For those that do not have access to funding to pay for the registration, you can write an email to us at precice2021@ipvs.uni-stuttgart.de, and we will evaluate each case individually. For selected cases we will supply a voucher to be used when registering that voids the required payment.<p>
-  
+
 </details>
 
 ## Call for contributions

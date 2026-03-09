@@ -113,9 +113,9 @@ If you have more participants, you can extract sections with `sed`:
 ```bash
 # Distributing 9 nodes across 3 participants.
 # Three nodes per participant.
-sed -n "1,3p" hosts.ompi > hosts.a 
+sed -n "1,3p" hosts.ompi > hosts.a
 sed -n "4,6p" hosts.ompi > hosts.b
-sed -n "7,9p" hosts.ompi > hosts.c 
+sed -n "7,9p" hosts.ompi > hosts.c
 ```
 
 ### Python

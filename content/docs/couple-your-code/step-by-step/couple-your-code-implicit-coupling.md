@@ -60,7 +60,7 @@ double dt; // actual time step size
 turn_on_solver() # eg: setup and partition mesh
 precice = precice.Participant("FluidSolver", "precice-config.xml", rank, size) # construct participant
 
-# [... ] define mesh 
+# [... ] define mesh
 ```
 
 </div>
@@ -107,7 +107,7 @@ precice.initialize()
 while precice.is_coupling_ongoing():
   if precice.requires_writing_checkpoint():
     save_old_state()
-  
+
   precice_dt = precice.get_max_time_step_size()
   solver_dt = begin_time_step()
   dt = min(precice_dt, solver_dt)

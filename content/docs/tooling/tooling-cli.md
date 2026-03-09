@@ -14,11 +14,11 @@ To install the cli locally as a runnable program, we recommend using either [pip
 ### pipx
 
 ```bash
-$ pipx install precice-cli  
+$ pipx install precice-cli
   installed package precice-cli 1.0.0, installed using Python 3.13.7
   These apps are now globally available
     - precice-cli
-done! 
+done!
 ```
 
 ### uv

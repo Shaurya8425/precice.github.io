@@ -51,11 +51,11 @@ PaStiX requires OpenBLAS, hwloc, Scotch and PaRSEC. All of these will be built b
 Clone OpenBLAS source code and build it with 8-byte integers.
 
 ```bash
-    cd ~ 
-    git clone https://github.com/xianyi/OpenBLAS.git 
+    cd ~
+    git clone https://github.com/xianyi/OpenBLAS.git
     mv OpenBLAS ./OpenBLAS_i8
-    cd OpenBLAS_i8 
-    make -j 4 INTERFACE64=1 
+    cd OpenBLAS_i8
+    make -j 4 INTERFACE64=1
     sudo make install
 
 ```
@@ -67,8 +67,8 @@ You can also specify a custom installation path (to avoid calling `sudo`) by usi
 This library will be put in a subfolder of the PaStiX folder.
 
 ```bash
-    mkdir -p ~/PaStiX/ 
-    cd ~/PaStiX/ 
+    mkdir -p ~/PaStiX/
+    cd ~/PaStiX/
     wget https://download.open-mpi.org/release/hwloc/v2.1/hwloc-2.1.0.tar.bz2
     bunzip2 hwloc-2.1.0.tar.bz2 && tar -xf hwloc-2.1.0.tar
     cp ~/CalculiX/ccx_2.17/src/make_hwloc.sh ~/PaStiX/hwloc-2.1.0/make_hwloc.sh
@@ -105,7 +105,7 @@ This library will be put in a subfolder of the PaStiX folder.
 
 ```bash
     cd ~/PaStiX
-    git clone https://github.com/Dhondtguido/PaStiX4CalculiX 
+    git clone https://github.com/Dhondtguido/PaStiX4CalculiX
     mv PaStiX4CalculiX pastix_src
     cd pastix_src
     rm make_pastix.sh

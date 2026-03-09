@@ -249,7 +249,7 @@ entries:
     - title: Config visualization
       url: /tooling-config-visualization.html
       output: web, pdf
-      
+
     - title: FMI runner
       url: /tooling-fmi-runner.html
       output: web, pdf
@@ -266,7 +266,7 @@ entries:
         - title: Get the Micro Manager
           url: /tooling-micro-manager-installation.html
           output: web, pdf
-        
+
         - title: Preparing micro simulation
           url: /tooling-micro-manager-prepare-micro-simulation.html
           output: web, pdf
@@ -294,7 +294,7 @@ entries:
         - title: Snapshot Computation
           url: /tooling-micro-manager-snapshot-configuration.html
           output: web, pdf
-    
+
     - title: Performance analysis
       url: /tooling-performance-analysis.html
       output: web, pdf
@@ -391,15 +391,15 @@ entries:
         subfolderitems:
 
         - title: Overview
-          url: /adapter-dumux.html 
+          url: /adapter-dumux.html
           output: web, pdf
 
         - title: Get the adapter
-          url: /adapter-dumux-get.html 
+          url: /adapter-dumux-get.html
           output: web, pdf
 
         - title: Use the adapter
-          url: /adapter-dumux-use.html 
+          url: /adapter-dumux-use.html
           output: web, pdf
 
       - title: DUNE
@@ -417,7 +417,7 @@ entries:
         - title: Overview
           url: /adapter-fenics.html
           output: web, pdf
-          
+
       - title: G+Smo
         output: web, pdf
         subfolderitems:
@@ -648,7 +648,7 @@ entries:
     - title: Running and writing tests
       url: /dev-docs-dev-testing.html
       output: web, pdf
-    
+
     - title: System tests
       url: /dev-docs-system-tests.html
       output: web, pdf
@@ -700,5 +700,3 @@ entries:
     - title: Migration guide
       url: /docs-meta-migration-guide.html
       output: web
-
-

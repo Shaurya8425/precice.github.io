@@ -36,7 +36,7 @@ Please first install the dependencies:
 * `python3` and `pipx` (or `pip`)
 * [`graphviz`](https://graphviz.org/download/) for rendering the result.
 * **GUI only:** dependencies of [`pygobject`](https://gnome.pages.gitlab.gnome.org/pygobject/getting_started.html)
-  
+
   In particular, in Ubuntu, you might need to install the following packages:
 
   ```bash
@@ -69,7 +69,7 @@ To open the interactive GUI and optionally pass a path to a configuration file:
 ```bash
 precice-config-visualizer-gui
 # Or directly open the precice-config.xml
-precice-config-visualizer-gui precice-config.xml 
+precice-config-visualizer-gui precice-config.xml
 ```
 
 The application automatically reloads configuration files on change and shows parsing errors at the bottom. This is especially useful for rapid prototyping.

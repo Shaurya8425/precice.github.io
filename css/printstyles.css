@@ -237,7 +237,7 @@ div.tab-content div.tab-pane pre {
   margin-top: 1em;
 }
 /* create counters to link tab headers to tab contents */
-.post-content ul.nav.nav-tabs { 
+.post-content ul.nav.nav-tabs {
     counter-reset: tab_number; /* creates a new instance of counter with name tab_number */
 }
 .post-content .nav.nav-tabs li::after {
@@ -254,8 +254,8 @@ div.tab-content div.tab-pane pre {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px grey;
 }
-div.tab-content { 
-  counter-reset: pane_number; 
+div.tab-content {
+  counter-reset: pane_number;
 }
 div.tab-pane::after {
     counter-increment: pane_number;

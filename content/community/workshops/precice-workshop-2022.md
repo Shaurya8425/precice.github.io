@@ -155,7 +155,7 @@ The workshop stretches from Monday noon CET to Thursday evening CET.
   <details class="workshop-event" id="courseII"><summary>preCICE Course II: Tools</summary>
   <p>Instructors: <a href="https://www.cs.cit.tum.de/en/sccs/people/gerasimos-chourdakis/">Gerasimos Chourdakis</a>, <a href="https://www.simtech.uni-stuttgart.de/exc/people/Uekermann/">Benjamin Uekermann</a><br/>
   Affiliation: Technical University of Munich, University of Stuttgart, preCICE developers.</p>
-  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>  
+  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>
   <p>In this second part, we take a tour over available tools to configure, understand, and post-process preCICE simulations. More specifically, we have a look at the preCICE logger, config visualizer, mesh exports, and watchpoints of preCICE. We also discuss common tips for visualizing partitioned simulations in ParaView.</p>
   </details>
 
@@ -198,7 +198,7 @@ The workshop stretches from Monday noon CET to Thursday evening CET.
   <details class="workshop-event" id="courseIII"><summary>preCICE Course III: Implicit Coupling</summary>
   <p>Instructors: <a href="https://www.cs.cit.tum.de/en/sccs/people/gerasimos-chourdakis/">Gerasimos Chourdakis</a>, <a href="https://www.simtech.uni-stuttgart.de/exc/people/Uekermann/">Benjamin Uekermann</a><br/>
   Affiliation: Technical University of Munich, University of Stuttgart, preCICE developers.</p>
-  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>  
+  <p>A hands-on introduction to preCICE, recommended for new users that want to learn how to couple their own codes.</p>
   <p>In this third part, we use a conjugate heat conduction scenario coupling OpenFOAM with Nutils to study implicit coupling.</p>
   <p>If you do not use the <a href="https://precice.org/installation-vm.html">preCICE Demo Virtual Machine</a>, you additionally require Nutils 6, OpenFOAM (e.g. v2112), and the latest OpenFOAM adapter for this part.</p>
   </details>

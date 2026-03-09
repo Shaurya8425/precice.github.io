@@ -1,5 +1,5 @@
 ---
-title: Step 8 – Mesh connectivity 
+title: Step 8 – Mesh connectivity
 permalink: couple-your-code-defining-mesh-connectivity.html
 keywords: api, adapter, projection, mapping, edges, triangles
 toc: false
@@ -35,7 +35,7 @@ void setMeshTetrahedron(precice::string_view meshName, VertexID firstVertexID, V
 set_mesh_edge(mesh_name, first_vertex_id, second_vertex_id)
 set_mesh_triangle(mesh_name, first_vertex_id, second_vertex_id, third_vertex_id)
 set_mesh_quad(mesh_name, first_vertex_id, second_vertex_id, third_vertex_id, fourth_vertex_id)
-set_mesh_tetrahedron(mesh_name, first_vertex_id, second_vertex_id, third_vertex_id, fourth_vertex_id)    
+set_mesh_tetrahedron(mesh_name, first_vertex_id, second_vertex_id, third_vertex_id, fourth_vertex_id)
 ```
 
 </div>
@@ -83,7 +83,7 @@ bool requiresMeshConnectivityFor(precice::string_view meshName);
 <div role="tabpanel" class="tab-pane" id="python-3" markdown="1">
 
 ```python
-requires_mesh_connectivity_for(mesh_name)   
+requires_mesh_connectivity_for(mesh_name)
 ```
 
 </div>
@@ -125,7 +125,7 @@ if (precice.requiresMeshConnectivityFor(meshName)) {
   // defines triangles ABC and BCD separately
   precice.setMeshTriangle(meshName, vertexIDs[0], vertexIDs[1], vertexIDs[2]);
   precice.setMeshTriangle(meshName, vertexIDs[1], vertexIDs[2], vertexIDs[3]);
-  
+
   // defines triangles ABC and BCD in one go
   std::vector<VertexID> triangles{
       vertexIDs[0], vertexIDs[1], vertexIDs[2],

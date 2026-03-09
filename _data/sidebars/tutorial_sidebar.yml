@@ -13,7 +13,7 @@ entries:
     - title: Overview
       url: /tutorials.html
       output: web
-    
+
     - title: Visualization
       url: /tutorials-visualization.html
       output: web
@@ -62,7 +62,7 @@ entries:
         - title: Basic variant
           url: /tutorials-channel-transport.html
           output: web
-        
+
         - title: Reaction
           url: /tutorials-channel-transport-reaction.html
           output: web
@@ -91,7 +91,7 @@ entries:
         - title: Basic variant
           url: /tutorials-flow-over-heated-plate.html
           output: web
-        
+
         - title: Nearest-projection mapping
           url: /tutorials-flow-over-heated-plate-nearest-projection.html
           output: web
@@ -99,7 +99,7 @@ entries:
         - title: Steady state
           url: /tutorials-flow-over-heated-plate-steady-state.html
           output: web
-        
+
         - title: Two meshes
           url: /tutorials-flow-over-heated-plate-two-meshes.html
           output: web
@@ -132,7 +132,7 @@ entries:
       url: /tutorials-partitioned-elastic-beam.html
       output: web
 
-      subfolders:      
+      subfolders:
       - title: Partitioned flow
         output: web
         subfolderitems:
@@ -144,7 +144,7 @@ entries:
         - title: Partitioned flow over heated plate
           url: /tutorials-flow-over-heated-plate-partitioned-flow.html
           output: web
-      
+
         - title: Partitioned pipe
           url: /tutorials-partitioned-pipe.html
           output: web
@@ -180,7 +180,7 @@ entries:
         - title: Basic variant
           url: /tutorials-perpendicular-flap.html
           output: web
-        
+
         - title: Stress variant
           url: /tutorials-perpendicular-flap-stress.html
           output: web
@@ -202,10 +202,10 @@ entries:
       url: /tutorials-turek-hron-fsi3.html
       output: web
 
-    - title: Volume-coupled diffusion 
+    - title: Volume-coupled diffusion
       url: /tutorials-volume-coupled-diffusion.html
       output: web
 
-    - title: Volume-coupled flow 
+    - title: Volume-coupled flow
       url: /tutorials-volume-coupled-flow.html
       output: web

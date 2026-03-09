@@ -108,7 +108,7 @@ Our tutorials generally follow a file structure similar to this:
 Other files you may encounter are the following:
 
 ```bash
-- <tutorial>/                     
+- <tutorial>/
   - <visualization scripts>       # gnuplot or simple Python scripts
   - images/                       # any images used by the documentation
   - solver-<code>/                # any configurable, tutorial-specific code, e.g., solver-fenics

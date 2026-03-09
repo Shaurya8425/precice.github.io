@@ -16,9 +16,9 @@ All data communicated within a coupling scheme needs to be configured through `e
 ```xml
 <coupling-scheme:serial-implicit>
   <participants first="FluidSolver" second="StuctureSolver"/>
-  <exchange data="Displacements" mesh="StructureMesh" from="StuctureSolver" to="FluidSolver"/>  
-  <exchange data="Velocities"    mesh="StructureMesh" from="StuctureSolver" to="FluidSolver"/>  
-  <exchange data="Forces"        mesh="StructureMesh" from="FluidSolver"    to="StuctureSolver"/>        
+  <exchange data="Displacements" mesh="StructureMesh" from="StuctureSolver" to="FluidSolver"/>
+  <exchange data="Velocities"    mesh="StructureMesh" from="StuctureSolver" to="FluidSolver"/>
+  <exchange data="Forces"        mesh="StructureMesh" from="FluidSolver"    to="StuctureSolver"/>
   ...
   <acceleration:...>
     <data name="Displacements" mesh="StructureMesh"/>

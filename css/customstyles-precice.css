@@ -313,12 +313,12 @@ ul.devlist>li {
   }
 }
 
-/* 
+/*
   Let the sidebar scroll up some amount, then fix in place
   Uses 'position: sticky' which offsets relative to its nearest scrolling ancestor and containing block
   see https://developer.mozilla.org/en-US/docs/Web/CSS/position
 */
-ul.nav.affix { 
+ul.nav.affix {
   position: static; /* override 'position: fixed' for <ul> */
 }
 div#tg-sb-sidebar {

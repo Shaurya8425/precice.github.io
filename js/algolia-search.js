@@ -132,4 +132,3 @@ document.addEventListener('mouseup', function(e) {
     results.style.display = 'block';
   }
 });
-
