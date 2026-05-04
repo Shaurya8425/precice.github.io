@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T07:57:35.033669",
+  "generated_at": "2026-05-04T08:25:11.729567",
   "topics": [
     {
       "id": 217,
@@ -22,7 +22,7 @@
       "last_posted_at": "2026-04-23T10:59:00.361Z",
       "like_count": 9,
       "posts_count": 1,
-      "views": 73,
+      "views": 76,
       "description": "Summary: With preCICE v3.4, we pushed features on several fronts. We made quasi-Newton acceleration bounds-aware as a first step toward fully supporting bounded coupling variables, such as density or volume..."
     },
     {
@@ -238,7 +238,7 @@
       "last_posted_at": "2024-07-12T19:58:06.171Z",
       "like_count": 5,
       "posts_count": 1,
-      "views": 235,
+      "views": 236,
       "description": "A familiar problem We know it\u2026 You started by searching if anyone had already coupled your favorite solver with preCICE. You found a paper from long ago, with authors kind..."
     },
     {
