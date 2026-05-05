@@ -218,7 +218,8 @@ img.precice-support {
 .logowall-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+  margin-bottom: 50px;
 }
 
 .logo-item {
