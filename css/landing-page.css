@@ -211,7 +211,11 @@ img.precice-support {
   color: #fff;
 }
 
-.logo-wall-grid {
+.logowall-filter {
+  margin-bottom: 50px;
+}
+
+.logowall-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -59,7 +59,7 @@ $(function() {
         var $button = $(this);
         var filter = String($button.data('filter') || '').toLowerCase();
         var $filterBar = $button.closest('.logowall-filter');
-        var $items = $filterBar.next('.logo-wall-grid').find('.logo-item');
+        var $items = $filterBar.next('.logowall-grid').find('.logo-item');
 
         if (!$items.length) {
             return;
